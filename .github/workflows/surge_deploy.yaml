@@ -21,4 +21,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./build testquick.surge.sh --token $ 'e3cc7629a8d6a7edf63e783de3e794b4'
+        run: surge ./build testquick.surge.sh --token ${{ secrets.SURGE_TOKEN }}
